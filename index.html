@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Visitor Pass Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top" hidden>
+  <div class="bar">
+    <a class="brand" href="#/">Visitor Pass Management System</a>
+    <nav id="nav" aria-label="Main">
+      <a href="#/" data-r="home">Dashboard</a>
+      <a href="#/records" data-r="records">Records</a>
+      <a href="#/add" data-r="add">Add visitor</a>
+      <button id="logout" type="button">Log out</button>
+    </nav>
+  </div>
+</header>
+<main id="app"></main>
+<dialog id="dlg">
+  <p id="dlgMsg" style="margin-top:0"></p>
+  <div class="actions" style="justify-content:flex-end"><button id="dNo" type="button">Cancel</button><button id="dYes" class="danger" type="button">Delete</button></div>
+</dialog>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
